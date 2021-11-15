@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="iso-8859-1">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imagenes/pokebola.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+
+    <title>Pokédex</title>
+  </head>
+  <body id="body">
+    <a href="#"><img id="arriba" src="imagenes/arriba.png" alt="" title="Haz click para ir arriba"/></a>
+
+    <div id="principal">
+      <img src="imagenes/titulo.png" alt="" class="wow fadeInDown" />
+      <h2 class="wow zoomIn">Encuéntralos a todos en la Pokédex!</h2>
+    </div>
+    <h1 onclick="ocultarTipos()">Tipos de pokemons</h1>
+    <div id="categorias" class="wow fadeIn">
+      <div class="categorias-tipo bicho">Bicho</div>
+      <div class="categorias-tipo dragon">Dragón</div>
+      <div class="categorias-tipo hada">Hada</div>
+      <div class="categorias-tipo psiquico">Psíquico</div>
+      <div class="categorias-tipo fuego">Fuego</div>
+      <div class="categorias-tipo fantasma">Fantasma</div>
+      <div class="categorias-tipo tierra">Tierra</div>
+      <div class="categorias-tipo normal">Normal</div>
+      <div class="categorias-tipo acero">Acero</div>
+      <div class="categorias-tipo electrico">Eléctrico</div>
+      <div class="categorias-tipo lucha">Lucha</div>
+      <div class="categorias-tipo volador">Volador</div>
+      <div class="categorias-tipo planta">Planta</div>
+      <div class="categorias-tipo hielo">Hielo</div>
+      <div class="categorias-tipo agua">Agua</div>
+      <div class="categorias-tipo veneno">Veneno</div>
+      <div class="categorias-tipo roca">Roca</div>
+    </div>
+    <div id="contenedor">
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a id="btn-abrir" onclick="abrir1()"
+          ><img src="imagenes/001.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 001</p>
+          <p class="descripcion-nombre">Bulbasur</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a  onclick="abrir2()"
+          ><img src="imagenes/002.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 002</p>
+          <p class="descripcion-nombre">Ivysaur</p>
+          <p class="descripcion-tipo planta">Planta</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a  onclick="abrir3()"
+          ><img src="imagenes/003.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 003</p>
+          <p class="descripcion-nombre">Venusaur</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a  onclick="abrir4()"
+          ><img src="imagenes/004.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 004</p>
+          <p class="descripcion-nombre">Charmander</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a  onclick="abrir5()"
+          ><img src="imagenes/005.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 005</p>
+          <p class="descripcion-nombre">Charmeleon</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a  onclick="abrir6()"
+          ><img src="imagenes/006.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 006</p>
+          <p class="descripcion-nombre">Charizard</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a  onclick="abrir7()"
+          ><img src="imagenes/007.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 007</p>
+          <p class="descripcion-nombre">Squirtle</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a  onclick="abrir8()"
+          ><img src="imagenes/008.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 008</p>
+          <p class="descripcion-nombre">Wartortle</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a  onclick="abrir9()"
+          ><img src="imagenes/009.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 009</p>
+          <p class="descripcion-nombre">Blastoise</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/010.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 010</p>
+          <p class="descripcion-nombre">Caterpie</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn  contenedor-bicho">
+        <a 
+          ><img src="imagenes/011.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 011</p>
+          <p class="descripcion-nombre">Metapod</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn  contenedor-bicho">
+        <a 
+          ><img src="imagenes/012.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 012</p>
+          <p class="descripcion-nombre">Butterfree</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn  contenedor-bicho">
+        <a 
+          ><img src="imagenes/013.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 013</p>
+          <p class="descripcion-nombre">Weedle</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/014.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 014</p>
+          <p class="descripcion-nombre">Kakuna</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/015.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 015</p>
+          <p class="descripcion-nombre">Beedrill</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/016.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 016</p>
+          <p class="descripcion-nombre">Pidgey</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/017.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 017</p>
+          <p class="descripcion-nombre">Pidgeotto</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/018.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 018</p>
+          <p class="descripcion-nombre">Pidgeot</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/019.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 019</p>
+          <p class="descripcion-nombre">Rattata</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/020.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 020</p>
+          <p class="descripcion-nombre">Raticate</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/021.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 021</p>
+          <p class="descripcion-nombre">Spearow</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/022.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 022</p>
+          <p class="descripcion-nombre">Fearow</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/023.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 023</p>
+          <p class="descripcion-nombre">Ekans</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn  contenedor-veneno">
+        <a 
+          ><img src="imagenes/024.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 024</p>
+          <p class="descripcion-nombre">Arbok</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/025.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 025</p>
+          <p class="descripcion-nombre">Pikachu</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/026.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 026</p>
+          <p class="descripcion-nombre">Raichu</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/027.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 027</p>
+          <p class="descripcion-nombre">Sandshrew</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/028.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 028</p>
+          <p class="descripcion-nombre">Sandslash</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/029.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 029</p>
+          <p class="descripcion-nombre">Nidoran</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/030.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 030</p>
+          <p class="descripcion-nombre">Nidorina</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/031.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 031</p>
+          <p class="descripcion-nombre">Nidoqueen</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/032.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 032</p>
+          <p class="descripcion-nombre">Nidoran</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/033.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 033</p>
+          <p class="descripcion-nombre">Nidorino</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/034.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 034</p>
+          <p class="descripcion-nombre">Nidoking</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-hada">
+        <a 
+          ><img src="imagenes/035.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 035</p>
+          <p class="descripcion-nombre">Clefairy</p>
+          <p class="descripcion-tipo hada">Hada</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-hada">
+        <a 
+          ><img src="imagenes/036.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 036</p>
+          <p class="descripcion-nombre">Clefable</p>
+          <p class="descripcion-tipo hada">Hada</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/037.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 037</p>
+          <p class="descripcion-nombre">Vulpix</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/038.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 038s</p>
+          <p class="descripcion-nombre">Ninetales</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-hada">
+        <a 
+          ><img src="imagenes/039.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No.039</p>
+          <p class="descripcion-nombre">Jigglypuff</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo hada">Hada</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-hada">
+        <a 
+          ><img src="imagenes/040.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 040</p>
+          <p class="descripcion-nombre">Wigglytuff</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo hada">Hada</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/041.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 041</p>
+          <p class="descripcion-nombre">Zubat</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/042.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 042</p>
+          <p class="descripcion-nombre">Golbat</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/043.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 043</p>
+          <p class="descripcion-nombre">Oddish</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/044.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 044</p>
+          <p class="descripcion-nombre">Gloom</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/045.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 045</p>
+          <p class="descripcion-nombre">Vileplume</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/046.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 046</p>
+          <p class="descripcion-nombre">Paras</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo planta">Planta</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/047.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 047</p>
+          <p class="descripcion-nombre">Parasect</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo planta">Planta</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/048.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 048</p>
+          <p class="descripcion-nombre">Venonat</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/049.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 049</p>
+          <p class="descripcion-nombre">Venomoth</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/050.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 050</p>
+          <p class="descripcion-nombre">Diglett</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/051.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 051</p>
+          <p class="descripcion-nombre">Dugtrio</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/052.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 052</p>
+          <p class="descripcion-nombre">Meowth</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/053.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 053</p>
+          <p class="descripcion-nombre">Persian</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/054.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 054</p>
+          <p class="descripcion-nombre">Psyduck</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/055.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 055</p>
+          <p class="descripcion-nombre">Golduck</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/056.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 056</p>
+          <p class="descripcion-nombre">Mankey</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/057.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 057</p>
+          <p class="descripcion-nombre">Primeape</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/058.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 058</p>
+          <p class="descripcion-nombre">Growlithe</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/059.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 059</p>
+          <p class="descripcion-nombre">Arcanine</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/060.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 060</p>
+          <p class="descripcion-nombre">Poliwag</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/061.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 061</p>
+          <p class="descripcion-nombre">Poliwhirl</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/062.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 062</p>
+          <p class="descripcion-nombre">Poliwrath</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/063.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 063</p>
+          <p class="descripcion-nombre">Abra</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/064.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 064</p>
+          <p class="descripcion-nombre">Kadabra</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/065.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 065</p>
+          <p class="descripcion-nombre">Alakazam</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/066.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 066</p>
+          <p class="descripcion-nombre">Machop</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/067.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 067</p>
+          <p class="descripcion-nombre">Machoke</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/068.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 068</p>
+          <p class="descripcion-nombre">Machamp</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/069.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 069</p>
+          <p class="descripcion-nombre">Bellsprout</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/070.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 070</p>
+          <p class="descripcion-nombre">Weepinbell</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/071.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 071</p>
+          <p class="descripcion-nombre">Victreebel</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/072.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 072</p>
+          <p class="descripcion-nombre">Tentacol</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/073.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 073</p>
+          <p class="descripcion-nombre">Tentacruel</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/074.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 074</p>
+          <p class="descripcion-nombre">Geodude</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/075.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 075</p>
+          <p class="descripcion-nombre">Graveler</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/076.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 076</p>
+          <p class="descripcion-nombre">Golem</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/077.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 077</p>
+          <p class="descripcion-nombre">Pontya</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/078.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 078</p>
+          <p class="descripcion-nombre">Rapidash</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/079.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 079</p>
+          <p class="descripcion-nombre">Slowpoke</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/080.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 080</p>
+          <p class="descripcion-nombre">Slowbro</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/081.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 081</p>
+          <p class="descripcion-nombre">Magnemite</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+          <p class="descripcion-tipo acero">Acero</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/082.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 082</p>
+          <p class="descripcion-nombre">Magneton</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+          <p class="descripcion-tipo acero">Acero</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/083.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 083</p>
+          <p class="descripcion-nombre">Farfetch´d</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/084.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 084</p>
+          <p class="descripcion-nombre">Doduo</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/085.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 085</p>
+          <p class="descripcion-nombre">Dodrio</p>
+          <p class="descripcion-tipo normal">Normal</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/086.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 086</p>
+          <p class="descripcion-nombre">Seel</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/087.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 087</p>
+          <p class="descripcion-nombre">Dewgong</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo hielo">Hielo</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/088.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 088</p>
+          <p class="descripcion-nombre">Grimer</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/089.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 089</p>
+          <p class="descripcion-nombre">Muk</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/090.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 090</p>
+          <p class="descripcion-nombre">Shellder</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/091.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 091</p>
+          <p class="descripcion-nombre">Cloyster</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo hielo">Hielo</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fantasma">
+        <a 
+          ><img src="imagenes/092.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 092</p>
+          <p class="descripcion-nombre">Gastly</p>
+          <p class="descripcion-tipo fantasma">Fantasma</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fantasma">
+        <a 
+          ><img src="imagenes/093.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 093</p>
+          <p class="descripcion-nombre">Haunter</p>
+          <p class="descripcion-tipo fantasma">Fantasma</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fantasma">
+        <a 
+          ><img src="imagenes/094.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 094</p>
+          <p class="descripcion-nombre">Gengar</p>
+          <p class="descripcion-tipo fantasma">Fantasma</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/095.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 095</p>
+          <p class="descripcion-nombre">Onix</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/096.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 096</p>
+          <p class="descripcion-nombre">Drowzee</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/097.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 097</p>
+          <p class="descripcion-nombre">Hipno</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/098.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 098</p>
+          <p class="descripcion-nombre">Krabby</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/099.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 099</p>
+          <p class="descripcion-nombre">Kingler</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/100.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 100</p>
+          <p class="descripcion-nombre">Voltorb</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/101.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 101</p>
+          <p class="descripcion-nombre">Electrode</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/102.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 102</p>
+          <p class="descripcion-nombre">Exeggcute</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/103.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 103</p>
+          <p class="descripcion-nombre">Exeggutor</p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/104.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 104</p>
+          <p class="descripcion-nombre">Cubone</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-tierra">
+        <a 
+          ><img src="imagenes/105.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 105</p>
+          <p class="descripcion-nombre">Marowak</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/106.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 106</p>
+          <p class="descripcion-nombre">Hitmonlee</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-lucha">
+        <a 
+          ><img src="imagenes/107.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 107</p>
+          <p class="descripcion-nombre">Hitmonchan</p>
+          <p class="descripcion-tipo lucha">Lucha</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/108.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 108</p>
+          <p class="descripcion-nombre">Licktung</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/109.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 109</p>
+          <p class="descripcion-nombre">Koffing</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-veneno">
+        <a 
+          ><img src="imagenes/110.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 110</p>
+          <p class="descripcion-nombre">Weezing</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/111.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 111</p>
+          <p class="descripcion-nombre">Rhyhorn</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+          <p class="descripcion-tipo roca">Roca</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/112.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 112</p>
+          <p class="descripcion-nombre">Rhydon</p>
+          <p class="descripcion-tipo tierra">Tierra</p>
+          <p class="descripcion-tipo roca">Roca</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/113.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 113</p>
+          <p class="descripcion-nombre">Chansey</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-planta">
+        <a 
+          ><img src="imagenes/114.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 114</p>
+          <p class="descripcion-nombre">Tangela</p>
+          <p class="descripcion-tipo planta">Planta</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/115.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 115</p>
+          <p class="descripcion-nombre">Kangaskhan</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/116.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 116</p>
+          <p class="descripcion-nombre">Horsea</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/117.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 117</p>
+          <p class="descripcion-nombre">Seadra</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/118.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 118</p>
+          <p class="descripcion-nombre">Golden</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/119.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 119</p>
+          <p class="descripcion-nombre">Seaking</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/120.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 120</p>
+          <p class="descripcion-nombre">Staryu</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/121.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 121</p>
+          <p class="descripcion-nombre">Starmie</p>
+          <p class="descripcion-tipo agua">Agua</p>
+
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/122.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 122</p>
+          <p class="descripcion-nombre">Mr. Mime</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+          <p class="descripcion-tipo hada">Hada</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/123.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 123</p>
+          <p class="descripcion-nombre">Scyther</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-hielo">
+        <a 
+          ><img src="imagenes/124.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 124</p>
+          <p class="descripcion-nombre">Jynx</p>
+          <p class="descripcion-tipo hielo">Hielo</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/125.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 125</p>
+          <p class="descripcion-nombre">Electabuzz</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/126.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 126</p>
+          <p class="descripcion-nombre">Magmar</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-bicho">
+        <a 
+          ><img src="imagenes/127.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 127</p>
+          <p class="descripcion-nombre">Pinsir</p>
+          <p class="descripcion-tipo bicho">Bicho</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/128.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 128</p>
+          <p class="descripcion-nombre">Tauros</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/129.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 129</p>
+          <p class="descripcion-nombre">Magikarp</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/130.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 130</p>
+          <p class="descripcion-nombre">Gyarados</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/131.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 131</p>
+          <p class="descripcion-nombre">Lapras</p>
+          <p class="descripcion-tipo agua">Agua</p>
+          <p class="descripcion-tipo hielo">Hielo</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/132.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 132</p>
+          <p class="descripcion-nombre">Ditto</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/133.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 133</p>
+          <p class="descripcion-nombre">Eevee</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/134.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 134</p>
+          <p class="descripcion-nombre">Vaporeon</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/135.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 135</p>
+          <p class="descripcion-nombre">Jolteon</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/136.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 136</p>
+          <p class="descripcion-nombre">Flareon</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/137.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 137</p>
+          <p class="descripcion-nombre">Porygon</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/138.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 138</p>
+          <p class="descripcion-nombre">Omanyte</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-agua">
+        <a 
+          ><img src="imagenes/139.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 139</p>
+          <p class="descripcion-nombre">Omastar</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/140.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 140</p>
+          <p class="descripcion-nombre">Kabuto</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-roca">
+        <a 
+          ><img src="imagenes/141.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 141</p>
+          <p class="descripcion-nombre">Kabutops</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo agua">Agua</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-volador">
+        <a 
+          ><img src="imagenes/142.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 142</p>
+          <p class="descripcion-nombre">Aerodactyl</p>
+          <p class="descripcion-tipo roca">Roca</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-normal">
+        <a 
+          ><img src="imagenes/143.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 143</p>
+          <p class="descripcion-nombre">Snorlax</p>
+          <p class="descripcion-tipo normal">Normal</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn  contenedor-hielo">
+        <a 
+          ><img src="imagenes/144.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 144</p>
+          <p class="descripcion-nombre">Articuno</p>
+          <p class="descripcion-tipo hielo">Hielo</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-electrico">
+        <a 
+          ><img src="imagenes/145.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 145</p>
+          <p class="descripcion-nombre">Zapdos</p>
+          <p class="descripcion-tipo electrico">Eléctrico</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-fuego">
+        <a 
+          ><img src="imagenes/146.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 146</p>
+          <p class="descripcion-nombre">Moltres</p>
+          <p class="descripcion-tipo fuego">Fuego</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-dragon">
+        <a 
+          ><img src="imagenes/147.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 147</p>
+          <p class="descripcion-nombre">Dratini</p>
+          <p class="descripcion-tipo dragon">Dragón</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-dragon">
+        <a 
+          ><img src="imagenes/148.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 148</p>
+          <p class="descripcion-nombre">Dragonair</p>
+          <p class="descripcion-tipo dragon">Dragón</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-dragon">
+        <a 
+          ><img src="imagenes/149.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 149</p>
+          <p class="descripcion-nombre">Dragonite</p>
+          <p class="descripcion-tipo dragon">Dragón</p>
+          <p class="descripcion-tipo volador">Volador</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/150.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 150</p>
+          <p class="descripcion-nombre">Mewtwo</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+      <div class="contenedor-pokemon wow zoomIn contenedor-psiquico">
+        <a 
+          ><img src="imagenes/151.png" alt="" class="imagen-pokemon"
+        /></a>
+        <div class="descripcion">
+          <p class="descripcion-numero">No. 151</p>
+          <p class="descripcion-nombre">Mew</p>
+          <p class="descripcion-tipo psiquico">Psíquico</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay activo" id="overlay-001">
+      <div class="overlay-contenedor-pokemon wow zoomIn"
+        id="overlay-contenedor">
+        <div class="overlay-contenedor-imagen">
+          <img src="imagenes/001.png" alt="" class="imagen-pokemon" />
+        </div>
+        <div class="overlay-descripcion">
+          <p class="overlay-descripcion-numero">No. 001</p>
+          <p class="overlay-descripcion-nombre">
+            <img src="imagenes/pokebola.png" alt="" />Bulbasur
+          </p>
+          <p class="overlay-descripcion-pokemon">
+            Cuando le crece bastante el bulbo del lomo, pierde la capacidad de
+            erguirse sobre las patas traseras.
+          </p>
+          <p class="descripcion-tipo planta">Planta</p>
+          <p class="descripcion-tipo veneno">Veneno</p>
+          <a
+            id="btn-cerrar"
+            class="btn-cerrar"
+            onclick="cerrar1()"
+            id="btn-cerrar"
+            ><i class="fas fa-times"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="overlay activo" id="overlay-002">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/002.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 002</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Ivysaur
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Cuando le crece bastante el bulbo del lomo, pierde la capacidad de erguirse sobre las patas traseras.
+            </p>
+            <p class="descripcion-tipo planta">Planta</p>
+            <p class="descripcion-tipo veneno">Veneno</p>
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar2()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+    </div>
+    <div class="overlay activo" id="overlay-003">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/003.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 003</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Venussaur
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                La planta florece cuando absorbe energía solar, lo cual le obliga a buscar siempre la luz del sol.
+            </p>
+            <p class="descripcion-tipo planta">Planta</p>
+            <p class="descripcion-tipo veneno">Veneno</p>
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar3()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-004">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/004.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 004</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Charmander
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.
+            </p>
+            <p class="descripcion-tipo fuego">Fuego</p>
+            
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar4()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-005">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/005.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 005</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Charmeleon
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Este Pokémon de naturaleza agresiva ataca en combate con su cola llameante y hace trizas al rival con sus afiladas garras.
+            </p>
+            <p class="descripcion-tipo fuego">Fuego</p>
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar5()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-006">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/006.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 006</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Charizard
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Escupe un fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.
+            </p>
+            <p class="descripcion-tipo fuego">Fuego</p>
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar6()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-007">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/007.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 007</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Squirtle
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.
+            </p>
+            <p class="descripcion-tipo agua">Agua</p>
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar7()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-008">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/008.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 008</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Wartortle
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Se lo considera un símbolo de longevidad. Los ejemplares más ancianos tienen musgo sobre el caparazón.
+            </p>
+            <p class="descripcion-tipo agua">Agua</p>
+
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar8()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay activo" id="overlay-009">
+        <div class="overlay-contenedor-pokemon wow zoomIn"
+          id="overlay-contenedor">
+          <div class="overlay-contenedor-imagen">
+            <img src="imagenes/009.png" alt="" class="imagen-pokemon" />
+          </div>
+          <div class="overlay-descripcion">
+            <p class="overlay-descripcion-numero">No. 009</p>
+            <p class="overlay-descripcion-nombre">
+              <img src="imagenes/pokebola.png" alt="" />Bulbasur
+            </p>
+            <p class="overlay-descripcion-pokemon">
+                Para acabar con su enemigo, lo aplasta con el peso de su cuerpo. En momentos de apuro, se esconde en el caparazón.
+            </p>
+            <p class="descripcion-tipo agua">Agua</p>
+
+            <a
+              id="btn-cerrar"
+              class="btn-cerrar"
+              onclick="cerrar9()"
+              id="btn-cerrar"
+              ><i class="fas fa-times"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    <script src="js/overlay.js"></script>
+    <script src="js/ocultarMostrar.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
